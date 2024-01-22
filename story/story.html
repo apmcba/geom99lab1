@@ -42,7 +42,8 @@ function initMap() {
     return new google.maps.Marker({
       position: location,
       label: locations,
-    });
+    })
+  };
   for (const plants in locations) {
    const plantscircle = new google.maps.Circle({
       strokeColor: "#FF0000",
