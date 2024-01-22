@@ -21,11 +21,6 @@
         }
     </style>
     <script>
-    interface city {
-  center: google.maps.LatLngLiteral;
-  blast: number;
-}
-
 const citymap: Record<string, city> = {
   bruce: {
     center: { lat: 44.325278, lng: -81.599444 },
@@ -45,11 +40,13 @@ const citymap: Record<string, city> = {
   },
 };
 
-function initMap(): void {
-  // Create the map.
-  const map = new google.maps.Map(
-    document.getElementById("map") as HTMLElement,
-    {
+let map;
+
+      async function initMap() {
+      const { Map } = await google.maps.importLibrary("maps");
+        
+        map = new google.maps.Map(document.getElementById("map"), {
+
       zoom: 5,
       center: { lat: 50.024, lng: -85.887 },
       mapTypeId: "terrain",
