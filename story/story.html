@@ -32,6 +32,7 @@
     blast: 30,
   }
 };  
+
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 43.554918, lng: -80.563146 },
@@ -40,6 +41,12 @@ function initMap() {
         });
 
   for (const plants in locations) {
+   
+    new google.maps.Marker({
+    position: locations.center,
+    map: map,
+    });
+   
     const plantscircle = new google.maps.Circle({
         strokeColor: "#F32013",
         strokeOpacity: 0.8,
