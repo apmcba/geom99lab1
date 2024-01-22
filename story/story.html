@@ -18,9 +18,7 @@
     </style>
    </head>
  <script>
-   let map;
-
-      async function initMap() {
+      function initMap() {
       const { Map } = await google.maps.importLibrary("maps");
         
         map = new google.maps.Map(document.getElementById("map"), {
@@ -28,19 +26,19 @@
           zoom: 5,
           mapTypeId: "terrain"
         });
-       
+      }      
      const markers = locations.map((location, i) => {
       return new google.maps.Marker({
       position: location, 
-      });
+      })
      });
        
-     const locations = [
-     { lat: 44.325278, lng: -81.599444},
-     { lat: 43.872778, lng: -78.719722},
-     { lat: 43.811667, lng: -79.065833},
-     { lat: 45.068889, lng: -66.454722},
-     ];
+const locations = [
+{ lat: 44.325278, lng: -81.599444},
+{ lat: 43.872778, lng: -78.719722},
+{ lat: 43.811667, lng: -79.065833},
+{ lat: 45.068889, lng: -66.454722},
+];
      
  </script>
   <body>
