@@ -35,9 +35,14 @@ bruce: {
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 43.554918, lng: -80.563146 },
-          zoom: 6,
+          zoom: 8,
           mapTypeId: "terrain"
         });
+  const markers = locations.map((location, i) => {
+    return new google.maps.Marker({
+      position: location,
+      label: locations,
+    });
   for (const plants in locations) {
    const plantscircle = new google.maps.Circle({
       strokeColor: "#FF0000",
