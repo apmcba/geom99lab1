@@ -1,29 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <!--Adapted from https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-html-->
-  <head>
-    <title>Story Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap"defer>
-    </script>
-    <script src="story.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Make 20 km radius/buffer around a point</title>
     <style>
-        #map {
-        height: 100%;
+        img { 
+            max-width: 100%; 
         }
-
-        html,
-        body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+        #map-canvas img { 
+            max-width: none; 
+        }
+        html, body, #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
-
-  </head>
-  <body>
-    <div id="map"></div>
-
-  </body>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing,geometry"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="map-buffer-example.js"></script>
+</head>
+<body>
+    <div id="map-canvas"></div>
+</body>
 </html>
