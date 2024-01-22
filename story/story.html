@@ -19,7 +19,7 @@
    </head>
  <script>
   const locations = {
-bruce: {
+  bruce: {
     center: { lat: 44.325278, lng: -81.599444 },
     blast: 30,
   },
@@ -38,12 +38,11 @@ function initMap() {
           zoom: 8,
           mapTypeId: "terrain"
         });
-  const markers = locations.map((location, i) => {
-    return new google.maps.Marker({
-      position: location,
-      label: locations,
-    })
-  }); 
+ 
+   new google.maps.Marker({
+        position: locations.center,
+        title: locations
+    });
 
   for (const plants in locations) {
     const plantscircle = new google.maps.Circle({
