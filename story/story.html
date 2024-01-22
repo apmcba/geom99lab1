@@ -39,8 +39,9 @@ function initMap() {
           mapTypeId: "terrain"
         });
  
-   new google.maps.Marker({
-        position: locations.center,
+   for (const plants in locations) {
+    const plantscircle = new google.maps.Marker({
+        position: locations[plants].center,
     });
 
   for (const plants in locations) {
