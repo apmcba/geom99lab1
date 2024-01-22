@@ -18,28 +18,45 @@
     </style>
    </head>
  <script>
-      function initMap() {
-      const { Map } = await google.maps.importLibrary("maps");
-        
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 50.024, lng: -85.887 },
-          zoom: 5,
+  const locations = {
+bruce: {
+    center: { lat: 44.325278, lng: -81.599444 },
+    blast: 16,
+  },
+  darlington: {
+    center: { lat: 43.872778, lng: -78.719722 },
+    blast: 16,
+  },
+  pickering: {
+    center: { lat: 43.811667, lng: -79.065833 },
+    blast: 16,
+  },
+  point_lepreau: {
+    center: { lat: 45.068889, lng: -66.454722 },
+    blast: 16,
+  },
+};  
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 43.554918, lng: -80.563146 },
+          zoom: 6,
           mapTypeId: "terrain"
         });
-      }      
-     const markers = locations.map((location, i) => {
-      return new google.maps.Marker({
-      position: location, 
-      })
-     });
-       
-const locations = [
-{ lat: 44.325278, lng: -81.599444},
-{ lat: 43.872778, lng: -78.719722},
-{ lat: 43.811667, lng: -79.065833},
-{ lat: 45.068889, lng: -66.454722},
-];
-     
+  for (const plants in locations) {
+   const plantscircle = new google.maps.Circle({
+      strokeColor: "#FF0000",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#FF0000",
+      fillOpacity: 0.35,
+      map,
+      center: locations[plants].center,
+      radius: Math.sqrt(citymap[city].blast) * 100,
+    });
+  }
+} 
+window.initMap = initMap;
+  
  </script>
   <body>
     <div id="map"></div>
