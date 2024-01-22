@@ -1,26 +1,27 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Make 20 km radius/buffer around a point</title>
+ <head>
+    <title>Story Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <style>
-        img { 
-            max-width: 100%; 
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+          height: 100%;
         }
-        #map-canvas img { 
-            max-width: none; 
-        }
-        html, body, #map-canvas {
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
         }
     </style>
-    <script type="text/javascript" src="story.js"></script>
+   </head>
+  <body>
+    <div id="map"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
     </script>
-</head>
-<body>
-    <div id="map-canvas"></div>
-</body>
+  </body>
 </html>
