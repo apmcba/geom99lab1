@@ -30,15 +30,14 @@
   pickering: {
     center: { lat: 43.811667, lng: -79.065833 },
     blast: 30,
-  },
+  }
 };  
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 43.554918, lng: -80.563146 },
           zoom: 8,
           mapTypeId: "terrain"
-        })
-    };
+        });
 
   for (const plants in locations) {
     const plantscircle = new google.maps.Circle({
