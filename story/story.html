@@ -37,7 +37,8 @@ function initMap() {
           center: { lat: 43.554918, lng: -80.563146 },
           zoom: 8,
           mapTypeId: "terrain"
-        });
+        })
+    };
  
    for (const plants in locations) {
     const plantscircle = new google.maps.Marker({
@@ -60,7 +61,7 @@ function initMap() {
   
 window.initMap = initMap;
   
- </script>
+</script>
   <body>
     <div id="map"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
