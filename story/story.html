@@ -61,22 +61,22 @@ function initMap() {
         });
  
  for (const plants in locations) {
-    const plantscirclesm = new google.maps.Circle({
-        strokeColor: "#EED202",
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: "#EED202",
-        fillOpacity: 0.35,
-        map,
-        center: locations[plants].center,
-        radius: (locations[plants].bigblast) * 1000,
-    })
      const plantcirclebg = new google.maps.Circle({
         strokeColor: "#F32013",
         strokeOpacity: 0.8,
         strokeWeight: 2,
         fillColor: "#F32013",
         fillOpacity: 0.35,
+        map,
+        center: locations[plants].center,
+        radius: (locations[plants].bigblast) * 1000,
+    })
+     const plantscirclesm = new google.maps.Circle({
+        strokeColor: "#EED202",
+        strokeOpacity: 1,
+        strokeWeight: 2,
+        fillColor: "#EED202",
+        fillOpacity: 0.5,
         map,
         center: locations[plants].center,
         radius: (locations[plants].bigblast) * 1000,
