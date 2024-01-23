@@ -95,7 +95,7 @@ function initMap() {
  features.forEach((feature) => {
     new google.maps.Marker({
       position: feature.position,
-      icon: icons[type].icon,
+      icon: iconBase + "parking_lot_maps.png",
       map: map,
     });
   });
