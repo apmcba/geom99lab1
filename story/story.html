@@ -137,14 +137,21 @@ for (const plants in locations) {
  
 // takes locations from the previously created varable and applies the matching marker from the legend items
  features.forEach((feature) => {
-    new google.maps.Marker({
+    marker = new google.maps.Marker({
       position: feature.position,
       icon: iconBase + "parking_lot_maps.png",
       label: feature.label,
       map: map,
     });
   });
-
+ 
+ var iw = new google.maps.InfoWindow({
+          content: marker.label,
+  });
+ google.maps.event.addListener(marker, "click", function (e) {
+          iw.open(map, this);
+  });
+ 
 // assigns variable to the "legend" div in the html
   const legend = document.getElementById("legend");
  
