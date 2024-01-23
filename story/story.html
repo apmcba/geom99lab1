@@ -80,14 +80,22 @@ function initMap() {
   };
   const features = [
     {
-      position: new google.maps.LatLng(-33.91721, 151.2263),
-      type: "info",
+      position: new google.maps.LatLng(44.325278, -81.599444),
+      type: "power plant",
+    },
+     {
+      position: new google.maps.LatLng(43.872778, -78.719722),
+      type: "power plant",
+    },
+     {
+      position: new google.maps.LatLng(43.811667, -79.065833),
+      type: "power plant",
     },
   ];
  features.forEach((feature) => {
     new google.maps.Marker({
       position: feature.position,
-      icon: icons[feature.type].icon,
+      icon: icon.icons,
       map: map,
     });
   });
@@ -97,7 +105,7 @@ function initMap() {
   for (const key in icons) {
     const type = icons[key];
     const name = type.name;
-    const icons = type.icon;
+    const icon = type.icon;
     const div = document.createElement("div");
 
     div.innerHTML = '<img src="' + icon + '"> ' + name;
