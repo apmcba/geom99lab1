@@ -65,7 +65,7 @@ for (const plants in locations) {
         strokeColor: "#EED202",
         strokeOpacity: 0.8,
         strokeWeight: 2,
-        fillColor: "EED202",
+        fillColor: "#EED202",
         fillOpacity: 0.35,
         map,
         center: locations[plants].center,
@@ -95,14 +95,10 @@ for (const plants in locations) {
     content: contentString,
     ariaLabel: "Danger Zone",
   });
-  const marker = new google.maps.Marker({
-    position: plantscirclesm ,
-    map,
-    title: "Danger Zone",
-  });
-  marker.addListener("click", () => {
+ 
+  plantscirclesm.addListener("click", () => {
     infowindow.open({
-      anchor: marker,
+      anchor: plantscirclesm,
       map,
     });
   });
