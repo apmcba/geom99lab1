@@ -69,7 +69,9 @@ function initMap() {
         radius: (locations[plants].blast) * 1000,
     })
   };
+ 
   const iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
+ 
   const icons = {
     parking: {
       name: "Power Plant",
@@ -95,7 +97,7 @@ function initMap() {
   for (const key in icons) {
     const type = icons[key];
     const name = type.name;
-    const icon = type.icon;
+    //const icon = type.icon;
     const div = document.createElement("div");
 
     div.innerHTML = '<img src="' + icon + '"> ' + name;
