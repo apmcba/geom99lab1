@@ -82,25 +82,13 @@ for (const plants in locations) {
         radius: (locations[plants].smallblast) * 1000,
     })
   };
-
-  const contentString =
-    '<div id="content">' +
-    "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Danger Zone</h1>' +
-    '<div id="bodyContent">' +
-    "<p> You're going to die " +
-    "</p>" +
-    "</div>";
-  const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-    ariaLabel: "Danger Zone",
-  });
  
-  map.addListener("click", () => {
-    infowindow.open({
-      anchor: plantscirclesm.circle,
-      map,
-    });
+  const infowindow = new google.maps.InfoWindow({
+    content:"You're going to die!"
+  });
+  
+  google.maps.event.addListener(plantscirclesm.circle, 'click', function() {
+    infowindow.open(map,plantscirclesm.circle);
   });
  
   const iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
