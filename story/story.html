@@ -144,10 +144,10 @@ for (const plants in locations) {
     });
   });
  
- for (const station in features) {
   var iw = new google.maps.InfoWindow({
            content: features.label,
    });
+ for (const station in features) {
   google.maps.event.addListener(marker, "click", function (e) {
            iw.open(map, this);
    });
