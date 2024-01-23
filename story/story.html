@@ -121,14 +121,17 @@ for (const plants in locations) {
     {
       position: new google.maps.LatLng(44.325278, -81.599444),
       type: "power plant",
+      label: "Bruce Power"
     },
      {
       position: new google.maps.LatLng(43.872778, -78.719722),
       type: "power plant",
+      label: "Darlington Nuclear Station"
     },
      {
       position: new google.maps.LatLng(43.811667, -79.065833),
       type: "power plant",
+      label: "Pickering Nuclear Station"
     },
   ];
  
@@ -137,6 +140,7 @@ for (const plants in locations) {
     new google.maps.Marker({
       position: feature.position,
       icon: iconBase + "parking_lot_maps.png",
+      label: feature.label,
       map: map,
     });
   });
