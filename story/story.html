@@ -136,13 +136,14 @@ for (const plants in locations) {
 ];
 
 // takes locations from the previously created varable and applies the matching marker from the legend items
-for (const station in features) {
-    marker = new google.maps.Marker({
-      position: features.position,
-      icon: iconBase + "parking_lot_maps.png",
+ features.forEach((feature) => {
+    new google.maps.Marker({
+      position: feature.position,
+      icon:  iconBase + "parking_lot_maps.png",
       map: map,
     });
-  
+  });
+ 
  for (const station in features) {
   var iw = new google.maps.InfoWindow({
            content: features.label,
