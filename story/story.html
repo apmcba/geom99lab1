@@ -145,7 +145,7 @@ for (const station in features) {
   
  for (const station in features) {
   var iw = new google.maps.InfoWindow({
-           content: feature.label,
+           content: features.label,
    });
   google.maps.event.addListener(marker, "click", function (e) {
            iw.open(map, this);
