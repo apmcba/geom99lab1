@@ -95,7 +95,7 @@ function initMap() {
  features.forEach((feature) => {
     new google.maps.Marker({
       position: feature.position,
-      icon: icons[parking].icon,
+      icon: icons[type].icon,
       map: map,
     });
   });
