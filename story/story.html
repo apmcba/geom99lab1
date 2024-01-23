@@ -48,7 +48,7 @@ re<!doctype html>
  
  <script>
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
+    const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 43.778233, lng: -80.616504 },
           zoom: 8.5,
           mapTypeId: "terrain"
@@ -118,25 +118,25 @@ for (const plants in locations) {
 
 //creates a variable holding locations for where a marker will be created 
   const features = [
-    {
+  {
       position: new google.maps.LatLng(44.325278, -81.599444),
       type: "power plant",
       label: "Bruce Power"
-    },
+   },
      {
       position: new google.maps.LatLng(43.872778, -78.719722),
       type: "power plant",
       label: "Darlington Nuclear Station"
-    },
+   },
      {
       position: new google.maps.LatLng(43.811667, -79.065833),
       type: "power plant",
       label: "Pickering Nuclear Station"
     },
-  ];
- 
+];
+
 // takes locations from the previously created varable and applies the matching marker from the legend items
- for (const station in features) {
+for (const station in features) {
     marker = new google.maps.Marker({
       position: feature.position,
       icon: iconBase + "parking_lot_maps.png",
@@ -164,13 +164,14 @@ for (const plants in locations) {
 
     div.innerHTML = '<img src="' + icon + '"> ' + name;
     legend.appendChild(div);
-  }
+  };
 
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
- 
-};  
-  
+    }; 
+
 window.initMap = initMap;
+
+};
   
 </script>
 </html>
