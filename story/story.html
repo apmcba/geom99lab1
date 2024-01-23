@@ -4,11 +4,17 @@
     <title>Ontario Nuclear Meltdown</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
  <body>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async></script>
+  
+     <!--creates the space where the map will be loaded-->
     <div id="map"></div>
+  
+     <!--creates the space where the legend will be put-->
     <div id="legend"><h3>Legend</h3></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async></script>
+    
   <h1> Where not to be during nuclear meltdown.</h1>
    <p> Just another reason why Whitby sucks. </p>
+  
   </body>
     <style>
         #map {
@@ -41,6 +47,14 @@
    </head>
  
  <script>
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 43.778233, lng: -80.616504 },
+          zoom: 8.5,
+          mapTypeId: "terrain"
+        });
+// code base off of example given at https://developers.google.com/maps/documentation/javascript/shapes#circles.
+// creates variables based off of power plant locations and their names
   const locations = {
   bruce: {
     center: { lat: 44.325278, lng: -81.599444 },
@@ -57,15 +71,9 @@
     smallblast: 15,
     bigblast: 30,
   }
-};  
-
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 43.778233, lng: -80.616504 },
-          zoom: 8.5,
-          mapTypeId: "terrain"
-        });
+}; 
  
+// creates the circle/buffers around previously given power plant locations
 for (const plants in locations) {
      const plantcirclebg = new google.maps.Circle({
         strokeColor: "#EED202",
@@ -88,9 +96,11 @@ for (const plants in locations) {
         radius: (locations[plants].smallblast) * 1000,
     })
   };
-
-  const iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
  
+// code based off example given at https://developers.google.com/maps/documentation/javascript/adding-a-legend#overview
+  const iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
+
+// creates variables for each of the different legend items and their icons
   const icons = {
     plant: {
       name: "Power Plant",
@@ -106,6 +116,7 @@ for (const plants in locations) {
    },
   };
 
+//creates a variable holding locations for where a marker will be created 
   const features = [
     {
       position: new google.maps.LatLng(44.325278, -81.599444),
@@ -120,6 +131,8 @@ for (const plants in locations) {
       type: "power plant",
     },
   ];
+ 
+// takes locations from the previously created varable and applies the matching marker from the legend items
  features.forEach((feature) => {
     new google.maps.Marker({
       position: feature.position,
@@ -128,8 +141,10 @@ for (const plants in locations) {
     });
   });
 
+// assigns variable to the "legend" div in the html
   const legend = document.getElementById("legend");
-
+ 
+// adds legend items into the legend element
   for (const key in icons) {
     const type = icons[key];
     const name = type.name;
@@ -142,8 +157,7 @@ for (const plants in locations) {
 
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
  
-};
-
+};  
   
 window.initMap = initMap;
   
