@@ -57,6 +57,18 @@ function initMap() {
           mapTypeId: "terrain"
         });
  
+ for (const plants in locations) {
+    const plantscircle = new google.maps.Circle({
+        strokeColor: "#F32013",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#F32013",
+        fillOpacity: 0.35,
+        map,
+        center: locations[plants].center,
+        radius: (locations[plants].blast) * 1000,
+    })
+  };
   const iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
   const icons = {
     parking: {
@@ -91,18 +103,8 @@ function initMap() {
   }
 
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
-
-    const plantscircle = new google.maps.Circle({
-        strokeColor: "#F32013",
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: "#F32013",
-        fillOpacity: 0.35,
-        map,
-        center: locations[plants].center,
-        radius: (locations[plants].blast) * 1000,
-    })
-  };
+ 
+};
 
   
 window.initMap = initMap;
