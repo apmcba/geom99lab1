@@ -60,28 +60,52 @@ function initMap() {
           mapTypeId: "terrain"
         });
  
- for (const plants in locations) {
+for (const plants in locations) {
      const plantcirclebg = new google.maps.Circle({
-        strokeColor: "#F32013",
+        strokeColor: "#EED202",
         strokeOpacity: 0.8,
         strokeWeight: 2,
-        fillColor: "#F32013",
+        fillColor: "EED202",
         fillOpacity: 0.35,
         map,
         center: locations[plants].center,
         radius: (locations[plants].bigblast) * 1000,
     })
      const plantscirclesm = new google.maps.Circle({
-        strokeColor: "#EED202",
+        strokeColor: "#F32013",
         strokeOpacity: 1,
         strokeWeight: 2,
-        fillColor: "#EED202",
+        fillColor: "#F32013",
         fillOpacity: 0.5,
         map,
         center: locations[plants].center,
         radius: (locations[plants].smallblast) * 1000,
     })
   };
+
+  const contentString =
+    '<div id="content">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Danger Zone</h1>' +
+    '<div id="bodyContent">' +
+    "<p> You're going to die " +
+    "</p>" +
+    "</div>";
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Danger Zone",
+  });
+  const marker = new google.maps.Marker({
+    position: plantscirclesm ,
+    map,
+    title: "Danger Zone",
+  });
+  marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+  });
  
   const iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
  
@@ -90,15 +114,8 @@ function initMap() {
       name: "Power Plant",
       icon: iconBase + "parking_lot_maps.png",
     },
-    bigcircle: {
-       name: "Less Dead - 30km"
-       icon: plantcirclebg,
-    },
-    smallcircle: {
-        name: "Dead - 15km"
-        icon: plantscirclesm,
   };
-  
+
   const features = [
     {
       position: new google.maps.LatLng(44.325278, -81.599444),
