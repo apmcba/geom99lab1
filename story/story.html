@@ -38,15 +38,18 @@
   const locations = {
   bruce: {
     center: { lat: 44.325278, lng: -81.599444 },
-    blast: 30,
+    smallblast: 15,
+    bigblast: 30,
   },
   darlington: {
     center: { lat: 43.872778, lng: -78.719722 },
-    blast: 30,
+    smallblast: 15,
+    bigblast: 30,
   },
   pickering: {
     center: { lat: 43.811667, lng: -79.065833 },
-    blast: 30,
+    smallblast: 15,
+    bigblast: 30,
   }
 };  
 
@@ -58,7 +61,17 @@ function initMap() {
         });
  
  for (const plants in locations) {
-    const plantscircle = new google.maps.Circle({
+    const plantscirclesm = new google.maps.Circle({
+        strokeColor: "#EED202",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#EED202",
+        fillOpacity: 0.35,
+        map,
+        center: locations[plants].center,
+        radius: (locations[plants].bigblast) * 1000,
+    })
+     const plantcirclebg = new google.maps.Circle({
         strokeColor: "#F32013",
         strokeOpacity: 0.8,
         strokeWeight: 2,
@@ -66,7 +79,7 @@ function initMap() {
         fillOpacity: 0.35,
         map,
         center: locations[plants].center,
-        radius: (locations[plants].blast) * 1000,
+        radius: (locations[plants].bigblast) * 1000,
     })
   };
  
