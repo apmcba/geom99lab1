@@ -90,7 +90,15 @@ function initMap() {
       name: "Power Plant",
       icon: iconBase + "parking_lot_maps.png",
     },
+    bigcircle: {
+       name: "Less Dead - 30km"
+       icon: plantcirclebg,
+    },
+    smallcircle: {
+        name: "Dead - 15km"
+        icon: plantscirclesm,
   };
+  
   const features = [
     {
       position: new google.maps.LatLng(44.325278, -81.599444),
