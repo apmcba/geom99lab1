@@ -143,15 +143,6 @@ for (const plants in locations) {
       map: map,
     });
   });
-
- for (const station in features) {
-  var iw = new google.maps.InfoWindow({
-           content: features.label,
-   });
-  google.maps.event.addListener(marker, "click", function (e) {
-           iw.open(map, this);
-   });
- };
   
 // assigns variable to the "legend" div in the html
   const legend = document.getElementById("legend");
