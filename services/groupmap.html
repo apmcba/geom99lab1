@@ -34,14 +34,16 @@
       });
     // Initialize the search control
     var searchControl = new L.Control.Search({
-        layer: geojsonLayer, // Use the GeoJSON layer
+      layer: geojsonLayer, // Use the GeoJSON layer
         propertyName: 'LONGNAME', // Specify the property to search within
         marker: false, // Disable markers for search results
         moveToLocation: function(coordinates) {
             // Move the map to the location of the search result
             map.setView(coordinates, 15); // Adjust the zoom level as needed
         });
-
+    }
+        
+    
         // Add search control to the map
         searchControl.addTo(map);
       
