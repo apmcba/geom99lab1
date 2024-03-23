@@ -33,19 +33,7 @@
         // Add layer to the map
         geojsonLayer.addTo(map);
       });
-    // Initialize the search control
-    var searchControl = new L.Control.Search({
-      layer: geojsonLayer,
-      propertyName: 'LONGNAME', // Specify the property to search within
-      marker: false, // Set to false if you don't want to show markers for search results
-     {// Move the map to the location of the search result
-      map.setView(latlng, 10); // Adjust the zoom level as needed
-    }
-});
-
-    // Add search control to the map
-    map.addControl(searchControl);
-
+    
     // Optionally, you can add popups or customize styles here
     geojsonLayer.bindPopup(function (layer) {
       return layer.feature.properties.popupContent;
