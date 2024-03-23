@@ -32,6 +32,7 @@
         // Add layer to the map
         geojsonLayer.addTo(map);
       });
+    
     // Initialize the search control
     var searchControl = new L.Control.Search({
       layer: geojsonLayer, // Use the GeoJSON layer
@@ -40,12 +41,12 @@
         moveToLocation: function(coordinates) {
             // Move the map to the location of the search result
             map.setView(coordinates, 15); // Adjust the zoom level as needed
-        };
-    }
+        }
+    };
         
     
-        // Add search control to the map
-        searchControl.addTo(map);
+    // Add search control to the map
+    searchControl.addTo(map);
       
   </script>
 </body>
