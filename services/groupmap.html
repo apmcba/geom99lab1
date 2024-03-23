@@ -24,7 +24,7 @@
     var geojsonLayer = L.geoJSON();
 
     // Fetch GeoJSON data (replace URL with your GeoJSON file)
-    fetch(map.json)
+    fetch('https://apmcba.github.io/geom99lab1/services/groupmap.json')
       .then(response => response.json())
       .then(data => {
         // Add GeoJSON data to the layer
