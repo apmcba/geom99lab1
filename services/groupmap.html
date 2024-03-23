@@ -41,14 +41,13 @@
       layer: geojsonLayer,
       propertyName: 'LONGNAME', // Specify the property to search within
       marker: false, // Set to false if you don't want to show markers for search results
-      moveToLocation: function(latlng, title, map) {
-        // Move the map to the location of the search result
-        map.setView(latlng, 10); // Adjust the zoom level as needed
+     {// Move the map to the location of the search result
+      map.setView(latlng, 10); // Adjust the zoom level as needed
     }
 });
 
-// Add search control to the map
-map.addControl(searchControl);
+    // Add search control to the map
+    map.addControl(searchControl);
 
     // Optionally, you can add popups or customize styles here
     geojsonLayer.bindPopup(function (layer) {
