@@ -1,0 +1,1199 @@
+{
+  "currentVersion" : 11.2, 
+  "id" : 1, 
+  "name" : "First_Floor", 
+  "type" : "Feature Layer", 
+  "serviceItemId" : "036f8e00634f48afbfebb0be2038d4b0", 
+  "cacheMaxAge" : 30, 
+  "displayField" : "SHORTNAME", 
+  "description" : "", 
+  "copyrightText" : "", 
+  "defaultVisibility" : true, 
+  "editingInfo" : {
+    "lastEditDate" : 1711131446598, 
+    "schemaLastEditDate" : 1711131446598, 
+    "dataLastEditDate" : 1710528908557
+  }, 
+  "relationships" : [], 
+  "isDataVersioned" : false, 
+  "hasContingentValuesDefinition" : false, 
+  "supportsAppend" : true, 
+  "supportsCalculate" : true, 
+  "supportsASyncCalculate" : true, 
+  "supportsTruncate" : true, 
+  "supportsAttachmentsByUploadId" : true, 
+  "supportsAttachmentsResizing" : true, 
+  "supportsRollbackOnFailureParameter" : true, 
+  "supportsStatistics" : true, 
+  "supportsExceedsLimitStatistics" : true, 
+  "supportsAdvancedQueries" : true, 
+  "supportsValidateSql" : true, 
+  "supportsCoordinatesQuantization" : true, 
+  "supportsLayerOverrides" : true, 
+  "supportsTilesAndBasicQueriesMode" : true, 
+  "supportsFieldDescriptionProperty" : true, 
+  "supportsQuantizationEditMode" : true, 
+  "supportsApplyEditsWithGlobalIds" : false, 
+  "supportsMultiScaleGeometry" : true, 
+  "supportsReturningQueryGeometry" : true, 
+  "hasGeometryProperties" : true, 
+  "geometryProperties" : 
+  {
+    "shapeAreaFieldName" : "Shape__Area", 
+    "shapeLengthFieldName" : "Shape__Length", 
+    "units" : "esriDecimalDegrees"
+  }, 
+  "advancedQueryCapabilities" : {
+    "supportsPagination" : true, 
+    "supportsQueryAttachmentsCountOnly" : true, 
+    "supportsPaginationOnAggregatedQueries" : true, 
+    "supportsQueryRelatedPagination" : true, 
+    "supportsQueryWithDistance" : true, 
+    "supportsReturningQueryExtent" : true, 
+    "supportsStatistics" : true, 
+    "supportsOrderBy" : true, 
+    "supportsDistinct" : true, 
+    "supportsQueryWithResultType" : true, 
+    "supportsSqlExpression" : true, 
+    "supportsAdvancedQueryRelated" : true, 
+    "supportsCountDistinct" : true, 
+    "supportsPercentileStatistics" : true, 
+    "supportsSpatialAggregationStatistics" : true, 
+    "supportedSpatialAggregationStatistics" : [
+      "EnvelopeAggregate", 
+      "CentroidAggregate", 
+      "ConvexHullAggregate"
+    ], 
+    "supportsLod" : true, 
+    "supportsQueryWithLodSR" : false, 
+    "supportedLodTypes" : [
+      "geohash"
+    ], 
+    "supportsReturningGeometryCentroid" : true, 
+    "supportsReturningGeometryEnvelope" : false, 
+    "supportsReturningGeometryProperties" : true, 
+    "supportsQueryWithDatumTransformation" : true, 
+    "supportsCurrentUserQueries" : true, 
+    "supportsHavingClause" : true, 
+    "supportsOutFieldSQLExpression" : true, 
+    "supportsMaxRecordCountFactor" : true, 
+    "supportsTopFeaturesQuery" : true, 
+    "supportsDisjointSpatialRel" : true, 
+    "supportsQueryWithCacheHint" : true, 
+    "supportedOperationsWithCacheHint" : [
+      "query", 
+      "queryTopFilter", 
+      "queryAnalytics", 
+      "queryAttachments", 
+      "queryRelated", 
+      "queryBins"
+    ], 
+    "supportsQueryAnalytic" : true, 
+    "supportsQueryBins" : true, 
+    "supportsDefaultSR" : true, 
+    "supportsFullTextSearch" : true
+  }, 
+  "advancedQueryAnalyticCapabilities" : {
+    "supportsLinearRegression" : true, 
+    "supportsAsync" : true, 
+    "supportsPercentileAnalytic" : true
+  }, 
+  "queryBinsCapabilities" : {
+    "supportsAsync" : true, 
+    "supportsAutoIntervalBin" : true, 
+    "supportsFixedIntervalBin" : true, 
+    "supportsFixedBoundariesBin" : true, 
+    "supportsDateBin" : true, 
+    "supportedStatisticTypes" : [
+      "COUNT", 
+      "SUM", 
+      "AVG", 
+      "VAR", 
+      "STDDEV", 
+      "MIN", 
+      "MAX", 
+      "PERCENTILE_CONT", 
+      "PERCENTILE_DISC", 
+      "CentroidAggregate", 
+      "EnvelopeAggregate", 
+      "ConvexHullAggregate"
+    ]
+  }, 
+  "advancedEditingCapabilities" : {
+    "supportedSqlFormatsInCalculate" : [
+      "standard"
+    ], 
+    "supportsAsyncApplyEdits" : true, 
+    "supportsReturnEditResults" : true, 
+    "supportsApplyEditsbyUploadID" : true, 
+    "supportedApplyEditsUploadIDFormats" : "JSON"
+  }, 
+  "infoInEstimates" : [
+    "extent", 
+    "count"
+  ], 
+  "useStandardizedQueries" : true, 
+  "geometryType" : "esriGeometryPolygon", 
+  "minScale" : 0, 
+  "maxScale" : 0, 
+  "extent" : {
+    "xmin" : -78.742196775999957, 
+    "ymin" : 44.340336474000026, 
+    "xmax" : -78.739518901999986, 
+    "ymax" : 44.341654450000078, 
+    "spatialReference" : {
+      "wkid" : 4326, 
+      "latestWkid" : 4326
+    }
+  }, 
+  "drawingInfo":{"renderer":{"type":"uniqueValue","field1":"SPACETYPE","uniqueValueInfos":[{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[209,199,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"<Null>","label":"<Null>"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[194,252,179,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"AUK'S LODGE","label":"AUK'S LODGE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,194,182,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"BIO-COMMONS","label":"BIO-COMMONS"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[182,249,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"BOOK STORE","label":"BOOK STORE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,240,179,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"C.A.W.T.","label":"C.A.W.T."},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,182,227,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"CAFETERIA","label":"CAFETERIA"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[212,252,221,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"CLASSROOM","label":"CLASSROOM"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,239,215,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"COMPUTER LAB","label":"COMPUTER LAB"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[204,228,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"CORRIDOR","label":"CORRIDOR"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,215,239,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"DINING AREA","label":"DINING AREA"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[227,252,194,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"ELEVATOR","label":"ELEVATOR"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[251,179,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"FACILITIES","label":"FACILITIES"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,179,196,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"GREEN HOUSE","label":"GREEN HOUSE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[244,199,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"GREEN HOUSE ","label":"GREEN HOUSE "},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[182,252,231,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"HATCHERY","label":"HATCHERY"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,215,212,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"HEADER HOUSE","label":"HEADER HOUSE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[189,208,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"HSEKPG","label":"HSEKPG"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[218,179,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"HSKP","label":"HSKP"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[251,252,207,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"HSKPG","label":"HSKPG"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[184,185,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"HSKPG ","label":"HSKPG "},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[215,252,240,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"I.T.","label":"I.T."},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[184,252,198,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"KAWARTHA GRILL","label":"KAWARTHA GRILL"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[227,215,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"KITCHEN","label":"KITCHEN"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,216,192,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"LAB","label":"LAB"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[204,242,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"LEARNING COMMONS","label":"LEARNING COMMONS"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,227,182,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"LECTURE THEATRE","label":"LECTURE THEATRE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[239,252,179,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"LIBRARY","label":"LIBRARY"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,199,213,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"MECHANICAL","label":"MECHANICAL"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,199,237,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"OFFICE","label":"OFFICE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[204,252,204,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"PREP AREA","label":"PREP AREA"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[179,196,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"PREP ROOM","label":"PREP ROOM"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[230,252,210,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"PUMP ROOM","label":"PUMP ROOM"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[249,215,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"SHIPPING & RECIEVING","label":"SHIPPING & RECIEVING"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,182,185,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"STAIRWELL","label":"STAIRWELL"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[250,252,194,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"STORAGE","label":"STORAGE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[218,252,182,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"STORAGE ","label":"STORAGE "},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,240,204,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"TESTING CENTRE","label":"TESTING CENTRE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[189,232,252,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"WALK-IN FRIDGE","label":"WALK-IN FRIDGE"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[252,187,247,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.7}},"value":"WASHROOM","label":"WASHROOM"}],"fieldDelimiter":",","authoringInfo":{"colorRamp":{"type":"multipart","colorRamps":[{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[182,252,211,255],"toColor":[182,252,211,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[239,179,252,255],"toColor":[239,179,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,207,189,255],"toColor":[252,207,189,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[197,222,252,255],"toColor":[197,222,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[244,252,182,255],"toColor":[244,252,182,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,207,234,255],"toColor":[252,207,234,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[184,252,252,255],"toColor":[184,252,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[184,189,252,255],"toColor":[184,189,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,244,204,255],"toColor":[252,244,204,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,184,197,255],"toColor":[252,184,197,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[201,252,179,255],"toColor":[201,252,179,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[229,202,252,255],"toColor":[229,202,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,179,228,255],"toColor":[252,179,228,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[225,252,199,255],"toColor":[225,252,199,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[210,245,252,255],"toColor":[210,245,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[212,252,222,255],"toColor":[212,252,222,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,212,216,255],"toColor":[252,212,216,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,229,210,255],"toColor":[252,229,210,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[197,202,252,255],"toColor":[197,202,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[249,194,252,255],"toColor":[249,194,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[215,252,243,255],"toColor":[215,252,243,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,182,211,255],"toColor":[252,182,211,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[182,235,252,255],"toColor":[182,235,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[234,252,215,255],"toColor":[234,252,215,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,228,179,255],"toColor":[252,228,179,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[220,215,252,255],"toColor":[220,215,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[179,252,185,255],"toColor":[179,252,185,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,192,184,255],"toColor":[252,192,184,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[212,182,252,255],"toColor":[212,182,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[179,207,252,255],"toColor":[179,207,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,199,244,255],"toColor":[252,199,244,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[184,252,234,255],"toColor":[184,252,234,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[204,252,205,255],"toColor":[204,252,205,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[249,215,252,255],"toColor":[249,215,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[247,252,202,255],"toColor":[247,252,202,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,224,194,255],"toColor":[252,224,194,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[210,235,252,255],"toColor":[210,235,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,222,215,255],"toColor":[252,222,215,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,215,232,255],"toColor":[252,215,232,255]}]}}},"scaleSymbols":true,"transparency":0,"labelingInfo":null}, 
+  "allowGeometryUpdates" : true, 
+  "hasAttachments" : false, 
+  "htmlPopupType" : "esriServerHTMLPopupTypeAsHTMLText", 
+  "hasMetadata" : true, 
+  "hasM" : false, 
+  "hasZ" : true, 
+  "enableZDefaults" : true, 
+  "zDefault" : 0, 
+  "objectIdField" : "OBJECTID", 
+  "uniqueIdField" : 
+  {
+    "name" : "OBJECTID", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdField" : "", 
+  "typeIdField" : "SPACETYPE", 
+  "fields" : [
+    {
+      "name" : "OBJECTID", 
+      "type" : "esriFieldTypeOID", 
+      "alias" : "OBJECTID", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "FLOOR", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Floor Number", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 5, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SHORTNAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Building", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LONGNAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Full Name of Space", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 100, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SPACETYPE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Space Type", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape__Area", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape__Area", 
+      "sqlType" : "sqlTypeDouble", 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape__Length", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape__Length", 
+      "sqlType" : "sqlTypeDouble", 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "indexes" : [
+    {
+      "name" : "PK__FROST_CA__F4B70D85EF107D68", 
+      "fields" : "OBJECTID", 
+      "isAscending" : true, 
+      "isUnique" : true, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "user_1189.FROST_CAMPUS_FLOOR_PLAN_FIRST_FLOOR_Shape_sidx", 
+      "fields" : "Shape", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Spatial"
+    }, 
+    {
+      "name" : "Shape__Area_Index", 
+      "fields" : "Shape__Area", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "Shape__Length_Index", 
+      "fields" : "Shape__Length", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "exb-91a964ff77de4082892c9fa5ca635707-widget_3-SHORTNAME", 
+      "fields" : "SHORTNAME", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "exb-91a964ff77de4082892c9fa5ca635707-widget_3-SHORTNAME", 
+      "fields" : "SHORTNAME", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "FullText"
+    }, 
+    {
+      "name" : "exb-91a964ff77de4082892c9fa5ca635707-widget_3-LONGNAME", 
+      "fields" : "LONGNAME", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "exb-91a964ff77de4082892c9fa5ca635707-widget_3-LONGNAME", 
+      "fields" : "LONGNAME", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "FullText"
+    }
+  ], 
+  "dateFieldsTimeReference" : {
+    "timeZone" : "UTC", 
+    "respectsDaylightSaving" : false
+  }, 
+  "preferredTimeReference" : null, 
+  "types" : [
+    {
+      "id" : null, 
+      "name" : "\u003cNull\u003e", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "\u003cNull\u003e", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : null, 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "AUK'S LODGE", 
+      "name" : "AUK'S LODGE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "AUK'S LODGE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "AUK'S LODGE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "BIO-COMMONS", 
+      "name" : "BIO-COMMONS", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "BIO-COMMONS", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "BIO-COMMONS", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "BOOK STORE", 
+      "name" : "BOOK STORE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "BOOK STORE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "BOOK STORE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "C.A.W.T.", 
+      "name" : "C.A.W.T.", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "C.A.W.T.", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "C.A.W.T.", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "CAFETERIA", 
+      "name" : "CAFETERIA", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "CAFETERIA", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "CAFETERIA", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "CLASSROOM", 
+      "name" : "CLASSROOM", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "CLASSROOM", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "CLASSROOM", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "COMPUTER LAB", 
+      "name" : "COMPUTER LAB", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "COMPUTER LAB", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "COMPUTER LAB", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "CORRIDOR", 
+      "name" : "CORRIDOR", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "CORRIDOR", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "CORRIDOR", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "DINING AREA", 
+      "name" : "DINING AREA", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "DINING AREA", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "DINING AREA", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "ELEVATOR", 
+      "name" : "ELEVATOR", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "ELEVATOR", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "ELEVATOR", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "FACILITIES", 
+      "name" : "FACILITIES", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "FACILITIES", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "FACILITIES", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "GREEN HOUSE", 
+      "name" : "GREEN HOUSE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "GREEN HOUSE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "GREEN HOUSE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "GREEN HOUSE ", 
+      "name" : "GREEN HOUSE ", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "GREEN HOUSE ", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "GREEN HOUSE ", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "HATCHERY", 
+      "name" : "HATCHERY", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "HATCHERY", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "HATCHERY", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "HEADER HOUSE", 
+      "name" : "HEADER HOUSE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "HEADER HOUSE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "HEADER HOUSE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "HSEKPG", 
+      "name" : "HSEKPG", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "HSEKPG", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "HSEKPG", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "HSKP", 
+      "name" : "HSKP", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "HSKP", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "HSKP", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "HSKPG", 
+      "name" : "HSKPG", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "HSKPG", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "HSKPG", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "HSKPG ", 
+      "name" : "HSKPG ", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "HSKPG ", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "HSKPG ", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "I.T.", 
+      "name" : "I.T.", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "I.T.", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "I.T.", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "KAWARTHA GRILL", 
+      "name" : "KAWARTHA GRILL", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "KAWARTHA GRILL", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "KAWARTHA GRILL", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "KITCHEN", 
+      "name" : "KITCHEN", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "KITCHEN", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "KITCHEN", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "LAB", 
+      "name" : "LAB", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "LAB", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "LAB", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "LEARNING COMMONS", 
+      "name" : "LEARNING COMMONS", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "LEARNING COMMONS", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "LEARNING COMMONS", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "LECTURE THEATRE", 
+      "name" : "LECTURE THEATRE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "LECTURE THEATRE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "LECTURE THEATRE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "LIBRARY", 
+      "name" : "LIBRARY", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "LIBRARY", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "LIBRARY", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "MECHANICAL", 
+      "name" : "MECHANICAL", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "MECHANICAL", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "MECHANICAL", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "OFFICE", 
+      "name" : "OFFICE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "OFFICE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "OFFICE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "PREP AREA", 
+      "name" : "PREP AREA", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "PREP AREA", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "PREP AREA", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "PREP ROOM", 
+      "name" : "PREP ROOM", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "PREP ROOM", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "PREP ROOM", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "PUMP ROOM", 
+      "name" : "PUMP ROOM", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "PUMP ROOM", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "PUMP ROOM", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "SHIPPING & RECIEVING", 
+      "name" : "SHIPPING & RECIEVING", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "SHIPPING & RECIEVING", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "SHIPPING & RECIEVING", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "STAIRWELL", 
+      "name" : "STAIRWELL", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "STAIRWELL", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "STAIRWELL", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "STORAGE", 
+      "name" : "STORAGE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "STORAGE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "STORAGE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "STORAGE ", 
+      "name" : "STORAGE ", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "STORAGE ", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "STORAGE ", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "TESTING CENTRE", 
+      "name" : "TESTING CENTRE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "TESTING CENTRE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "TESTING CENTRE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "WALK-IN FRIDGE", 
+      "name" : "WALK-IN FRIDGE", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "WALK-IN FRIDGE", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "WALK-IN FRIDGE", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "WASHROOM", 
+      "name" : "WASHROOM", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "WASHROOM", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "LONGNAME" : null, 
+              "SPACETYPE" : "WASHROOM", 
+              "FLOOR" : null, 
+              "SHORTNAME" : null
+            }
+          }
+        }
+      ]
+    }
+  ], 
+  "templates" : [], 
+  "supportedQueryFormats" : "JSON, geoJSON, PBF", 
+  "supportedAppendFormats" : "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService", 
+  "supportedAppendSourceFilterFormats" : "sqlite,geoPackage,shapefile,filegdb,featureService", 
+  "supportedExportFormats" : "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel", 
+  "supportedSpatialRelationships" : [
+    "esriSpatialRelIntersects", 
+    "esriSpatialRelContains", 
+    "esriSpatialRelCrosses", 
+    "esriSpatialRelEnvelopeIntersects", 
+    "esriSpatialRelIndexIntersects", 
+    "esriSpatialRelOverlaps", 
+    "esriSpatialRelTouches", 
+    "esriSpatialRelWithin", 
+    "esriSpatialRelDisjoint", 
+    "esriSpatialRelRelation"
+  ], 
+  "supportedContingentValuesFormats" : "JSON, PBF", 
+  "supportedSyncDataOptions" : 4, 
+  "hasStaticData" : false, 
+  "maxRecordCount" : 2000, 
+  "standardMaxRecordCount" : 4000, 
+  "standardMaxRecordCountNoGeometry" : 32000, 
+  "tileMaxRecordCount" : 4000, 
+  "maxRecordCountFactor" : 1, 
+  "capabilities" : "Query"
+}
