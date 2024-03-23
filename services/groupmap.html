@@ -10,7 +10,7 @@
   <script src="https://unpkg.com/leaflet-search"></script>
 </head>
 <body>
-  <div id="map" style="height: 400px;"></div>
+  <div id="map" style="height: auto;"></div>
 
   <script>
     // Create a Leaflet map centered at a specific location
@@ -34,10 +34,19 @@
         geojsonLayer.addTo(map);
       });
     
-    // Optionally, you can add popups or customize styles here
-    geojsonLayer.bindPopup(function (layer) {
-      return layer.feature.properties.popupContent;
-    });
+    // Initialize the search control
+    var searchControl = new L.Control.Search({
+    layer: geojsonLayer,  // Use the GeoJSON layer
+    propertyName: 'LONGNAME', // Specify the property to search within
+    marker: true,
+    moveToLocation: function(coordinates,LONGNAME, map) {
+        // Move the map to the location of the search result
+        map.setView(coordinates, 10); // Adjust the zoom level as needed
+    }
+});
+
+// Add search control to the map
+map.addControl(searchControl);
   </script>
 </body>
 </html>
