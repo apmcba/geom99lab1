@@ -1,0 +1,43 @@
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaflet GeoJSON Layers</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map" style="height: 400px;"></div>
+
+  <script>
+    // Create a Leaflet map centered at a specific location
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    // Add a base layer (optional)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Load GeoJSON data
+    var geojsonLayer = L.geoJSON();
+
+    // Fetch GeoJSON data (replace URL with your GeoJSON file)
+    fetch(map.json)
+      .then(response => response.json())
+      .then(data => {
+        // Add GeoJSON data to the layer
+        geojsonLayer.addData(data);
+
+        // Add layer to the map
+        geojsonLayer.addTo(map);
+      });
+
+    // Optionally, you can add popups or customize styles here
+    geojsonLayer.bindPopup(function (layer) {
+      return layer.feature.properties.popupContent;
+    });
+  </script>
+</body>
+</html>
